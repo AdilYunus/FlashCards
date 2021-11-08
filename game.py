@@ -13,7 +13,7 @@ class Game(QtWidgets.QDialog):
         super(Game, self).__init__()
         uic.loadUi('ui/game_screen.ui', self)
         self.quitButton.clicked.connect(self.back)
-        self.play_game()
+        self.show()
         # self.play_game()
         
 
@@ -38,7 +38,5 @@ class Game(QtWidgets.QDialog):
     # =================================================#
 
     def play_game(self):
-        self.show()
-        level = Polo()
-        level.player(self.level_1)
+        pass
 
