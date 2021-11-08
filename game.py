@@ -21,12 +21,13 @@ class Game(QtWidgets.QDialog):
         self.level_update()# call methode to level update -A
         self.cams = menu.Menu(self.name)
         self.cams.show()
+        self.level_update()
         self.close()
 
     def level_update(self):# level update -A
         self.user_info = {
             'username':self.name,
-            'level':200
+            'level':self.level_1
             }
         js_file_name = 'user/'+self.name+'.json'       
         with open(js_file_name,'w') as jsFile:
