@@ -2,7 +2,6 @@ from PyQt5 import QtWidgets, uic
 import sys
 import menu
 import json
-from level import Polo
 class Game(QtWidgets.QDialog):
     
 
