@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>920</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>920</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>920</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(11,131,120,219), stop:1 rgba(85,98,112,226));
+	color:rgba(255,255,255,210);
+	border-radius:5px
+}
+
+QPushButton#pushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(150,123,11,219), stop:1 rgba(85,81,84,226));
+}
+
+QPushButton#pushButton:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(150,123,1,255);
+}
+
+QPushButton#pushButton_2{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(11,131,120,219), stop:1 rgba(85,98,112,226));
+	color:rgba(255,255,255,210);
+	border-radius:5px
+}
+
+QPushButton#pushButton_2:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(150,123,11,219), stop:1 rgba(85,81,84,226));
+}
+
+QPushButton#pushButton_2:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(150,123,1,255);
+}
+
+
+QLabel#label_F_f:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(0,0,0,85), stop:1 rgba(50,50,50,150));
+}
+QLabel#label_L_f:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(0,0,0,85), stop:1 rgba(50,50,50,150));
+}
+QLabel#label_A_f:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(0,0,0,85), stop:1 rgba(50,50,50,150));
+}
+QLabel#label_S_f:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(0,0,0,85), stop:1 rgba(50,50,50,150));
+}
+QLabel#label_H_f:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(0,0,0,85), stop:1 rgba(50,50,50,150));
+}
+QLabel#label_C_f:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(0,0,0,85), stop:1 rgba(50,50,50,150));
+}
+QLabel#label_2A_f:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(0,0,0,85), stop:1 rgba(50,50,50,150));
+}
+QLabel#label_R_f:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(0,0,0,85), stop:1 rgba(50,50,50,150));
+}
+QLabel#label_D_f:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(0,0,0,85), stop:1 rgba(50,50,50,150));
+}
+QLabel#label_S2_f:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.50682, x2:1, y2:0.477, stop:0 rgba(0,0,0,85), stop:1 rgba(50,50,50,150));
+}
+</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>841</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_login">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>270</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>30</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(3, 151, 157);</string>
+      </property>
+      <property name="text">
+       <string>Login &amp; Sign Up</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_username">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>278</y>
+        <width>200</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="accessibleName">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgba(0,0,0,255);
+background-color: rgb(145, 197, 206);
+font: 9pt &quot;Arial&quot;;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);background-color: rgb(145, 197, 206);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+       <string notr="true">User Name</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>254</y>
+        <width>200</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>305</y>
+        <width>200</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_L_f">
+      <property name="geometry">
+       <rect>
+        <x>218</x>
+        <y>46</y>
+        <width>146</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_L_b">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>43</y>
+        <width>152</width>
+        <height>198</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+color: rgb(203, 175, 241);
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-width: 5px;border-style: solid;border-color: rgb(203, 175, 241);background-color: rgb(255, 122, 92);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_L">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>60</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>L</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_L_s">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>67</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(32, 109, 180);
+</string>
+      </property>
+      <property name="text">
+       <string>L</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_F_f">
+      <property name="geometry">
+       <rect>
+        <x>54</x>
+        <y>46</y>
+        <width>146</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_F">
+      <property name="geometry">
+       <rect>
+        <x>85</x>
+        <y>60</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>F</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_F_b">
+      <property name="geometry">
+       <rect>
+        <x>51</x>
+        <y>43</y>
+        <width>152</width>
+        <height>198</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+background-color: rgb(77, 159, 232);
+border-bottom-left-radius: 10px;
+border-width: 5px;border-style: solid;border-color: rgb(77, 159, 232);background-color: rgb(92, 225, 230);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_F_s">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>67</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(32, 109, 180);
+</string>
+      </property>
+      <property name="text">
+       <string>F</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_A_f">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>46</y>
+        <width>146</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_A_b">
+      <property name="geometry">
+       <rect>
+        <x>377</x>
+        <y>43</y>
+        <width>152</width>
+        <height>198</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-width: 5px;border-style: solid;border-color: rgb(255, 189, 89);background-color: rgb(217, 217, 217);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_A">
+      <property name="geometry">
+       <rect>
+        <x>405</x>
+        <y>59</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>A</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_A_s">
+      <property name="geometry">
+       <rect>
+        <x>415</x>
+        <y>66</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(32, 109, 180);
+</string>
+      </property>
+      <property name="text">
+       <string>A</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_S">
+      <property name="geometry">
+       <rect>
+        <x>568</x>
+        <y>59</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>S</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_S_f">
+      <property name="geometry">
+       <rect>
+        <x>543</x>
+        <y>46</y>
+        <width>146</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_S_b">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>43</y>
+        <width>152</width>
+        <height>198</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-width: 5px;border-style: solid;border-color: rgb(166, 166, 166);background-color: rgb(203, 175, 241);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_S_s">
+      <property name="geometry">
+       <rect>
+        <x>578</x>
+        <y>66</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(32, 109, 180);
+</string>
+      </property>
+      <property name="text">
+       <string>S</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_H">
+      <property name="geometry">
+       <rect>
+        <x>728</x>
+        <y>59</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>H</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_H_b">
+      <property name="geometry">
+       <rect>
+        <x>702</x>
+        <y>43</y>
+        <width>152</width>
+        <height>198</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-width: 5px;border-style: solid;border-color: rgb(92, 225, 230);background-color: rgb(77, 159, 232);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_H_f">
+      <property name="geometry">
+       <rect>
+        <x>705</x>
+        <y>46</y>
+        <width>146</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;</string>
+      </property>
+      <property name="locale">
+       <locale language="English" country="Netherlands"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_H_s">
+      <property name="geometry">
+       <rect>
+        <x>738</x>
+        <y>66</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(32, 109, 180);
+</string>
+      </property>
+      <property name="text">
+       <string>H</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_D_s">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>381</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(32, 109, 180);
+</string>
+      </property>
+      <property name="text">
+       <string>D</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_D_f">
+      <property name="geometry">
+       <rect>
+        <x>543</x>
+        <y>363</y>
+        <width>146</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_S2_s">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>381</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(32, 109, 180);
+</string>
+      </property>
+      <property name="text">
+       <string>S</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2A_s">
+      <property name="geometry">
+       <rect>
+        <x>255</x>
+        <y>381</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(32, 109, 180);
+</string>
+      </property>
+      <property name="text">
+       <string>A</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_C_b">
+      <property name="geometry">
+       <rect>
+        <x>51</x>
+        <y>360</y>
+        <width>152</width>
+        <height>198</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-width: 5px;border-style: solid;border-color: rgb(255, 164, 164);background-color: rgb(199, 223, 100);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_S2_f">
+      <property name="geometry">
+       <rect>
+        <x>705</x>
+        <y>363</y>
+        <width>146</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_S2_b">
+      <property name="geometry">
+       <rect>
+        <x>702</x>
+        <y>360</y>
+        <width>152</width>
+        <height>198</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-width: 5px;border-style: solid;border-color: rgb(201, 226, 101);background-color: rgb(255, 164, 164);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2A_b">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>360</y>
+        <width>152</width>
+        <height>198</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-width: 5px;border-style: solid;border-color: rgb(203, 175, 241);background-color: rgb(255, 189, 89);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_C_f">
+      <property name="geometry">
+       <rect>
+        <x>54</x>
+        <y>363</y>
+        <width>146</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2A_f">
+      <property name="geometry">
+       <rect>
+        <x>218</x>
+        <y>363</y>
+        <width>146</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_D">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>374</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>D</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_D_b">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>360</y>
+        <width>152</width>
+        <height>198</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+color: rgb(255, 85, 0);
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-width: 5px;border-style: solid;border-color: rgb(255, 85, 0);background-color: rgb(231, 92, 178);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2A">
+      <property name="geometry">
+       <rect>
+        <x>245</x>
+        <y>374</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>A</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_C">
+      <property name="geometry">
+       <rect>
+        <x>77</x>
+        <y>374</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_C_s">
+      <property name="geometry">
+       <rect>
+        <x>87</x>
+        <y>381</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(32, 109, 180);
+</string>
+      </property>
+      <property name="text">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_R_s">
+      <property name="geometry">
+       <rect>
+        <x>415</x>
+        <y>381</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(32, 109, 180);
+</string>
+      </property>
+      <property name="text">
+       <string>R</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_R_b">
+      <property name="geometry">
+       <rect>
+        <x>377</x>
+        <y>360</y>
+        <width>152</width>
+        <height>198</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-width: 5px;border-style: solid;border-color: rgb(50, 179, 226);background-color: rgb(3, 151, 157);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_R_f">
+      <property name="geometry">
+       <rect>
+        <x>381</x>
+        <y>363</y>
+        <width>146</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_R">
+      <property name="geometry">
+       <rect>
+        <x>405</x>
+        <y>374</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>R</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_S2">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>374</y>
+        <width>101</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>73</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>S</string>
+      </property>
+     </widget>
+     <zorder>label</zorder>
+     <zorder>label_F_b</zorder>
+     <zorder>label_login</zorder>
+     <zorder>lineEdit_username</zorder>
+     <zorder>pushButton</zorder>
+     <zorder>pushButton_2</zorder>
+     <zorder>label_L_b</zorder>
+     <zorder>label_L_s</zorder>
+     <zorder>label_L</zorder>
+     <zorder>label_F_s</zorder>
+     <zorder>label_F</zorder>
+     <zorder>label_L_f</zorder>
+     <zorder>label_F_f</zorder>
+     <zorder>label_A_b</zorder>
+     <zorder>label_A_s</zorder>
+     <zorder>label_A</zorder>
+     <zorder>label_S_b</zorder>
+     <zorder>label_S_s</zorder>
+     <zorder>label_S</zorder>
+     <zorder>label_H_b</zorder>
+     <zorder>label_H_s</zorder>
+     <zorder>label_H</zorder>
+     <zorder>label_C_b</zorder>
+     <zorder>label_S2_b</zorder>
+     <zorder>label_2A_b</zorder>
+     <zorder>label_D_b</zorder>
+     <zorder>label_C_s</zorder>
+     <zorder>label_R_b</zorder>
+     <zorder>label_2A_s</zorder>
+     <zorder>label_2A</zorder>
+     <zorder>label_R_s</zorder>
+     <zorder>label_R</zorder>
+     <zorder>label_D_s</zorder>
+     <zorder>label_D</zorder>
+     <zorder>label_S2_s</zorder>
+     <zorder>label_C</zorder>
+     <zorder>label_S2</zorder>
+     <zorder>label_2A_f</zorder>
+     <zorder>label_A_f</zorder>
+     <zorder>label_S_f</zorder>
+     <zorder>label_D_f</zorder>
+     <zorder>label_S2_f</zorder>
+     <zorder>label_H_f</zorder>
+     <zorder>label_C_f</zorder>
+     <zorder>label_R_f</zorder>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
