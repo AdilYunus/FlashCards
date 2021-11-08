@@ -21,7 +21,6 @@ class Game(QtWidgets.QDialog):
         self.level_update()# call methode to level update -A
         self.cams = menu.Menu(self.name)
         self.cams.show()
-        self.level_update()
         self.close()
 
     def level_update(self):# level update -A
