@@ -129,7 +129,7 @@ class Game(QtWidgets.QDialog):
             self.progressBar_ingame.setProperty("value", self.c_true)
             self.index = 0
             self.word_list = []
-            if self.level == 251:
+            if self.level == 251:#If the player has done all level.than back to level 1
                 self.timer2.stop()
                 self.level = 1
                 self.index = 0
