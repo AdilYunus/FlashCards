@@ -232,9 +232,9 @@ border-bottom-left-radius: 35px;</string>
      <widget class="QLabel" name="language">
       <property name="geometry">
        <rect>
-        <x>364</x>
+        <x>264</x>
         <y>150</y>
-        <width>181</width>
+        <width>381</width>
         <height>81</height>
        </rect>
       </property>
@@ -252,13 +252,16 @@ color: rgb(255, 255, 0);
       <property name="text">
        <string>Nederlands</string>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
      </widget>
      <widget class="QLabel" name="words">
       <property name="geometry">
        <rect>
-        <x>340</x>
+        <x>270</x>
         <y>290</y>
-        <width>231</width>
+        <width>371</width>
         <height>111</height>
        </rect>
       </property>
@@ -274,13 +277,16 @@ color: rgb(255, 255, 0);
       <property name="text">
        <string>Woorden</string>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
      </widget>
-     <widget class="QLabel" name="level">
+     <widget class="QLabel" name="gameTime">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>70</x>
         <y>50</y>
-        <width>171</width>
+        <width>141</width>
         <height>41</height>
        </rect>
       </property>
@@ -306,15 +312,18 @@ color: rgb(255, 255, 0);
 </string>
       </property>
       <property name="text">
-       <string>Words Level</string>
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QLabel" name="time">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>80</x>
         <y>130</y>
-        <width>91</width>
+        <width>145</width>
         <height>41</height>
        </rect>
       </property>
@@ -331,13 +340,16 @@ color: rgb(0, 0, 103);</string>
       <property name="text">
        <string>Time</string>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
      </widget>
      <widget class="QLabel" name="sleeptime">
       <property name="geometry">
        <rect>
-        <x>120</x>
+        <x>80</x>
         <y>190</y>
-        <width>72</width>
+        <width>145</width>
         <height>101</height>
        </rect>
       </property>
@@ -349,6 +361,9 @@ color: rgb(0, 0, 103);</string>
       </property>
       <property name="text">
        <string>3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QLabel" name="lt_b">
@@ -489,54 +504,6 @@ border-bottom-left-radius: 10px;</string>
        <string/>
       </property>
      </widget>
-     <widget class="QLineEdit" name="timeinput">
-      <property name="geometry">
-       <rect>
-        <x>105</x>
-        <y>371</y>
-        <width>100</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="accessibleName">
-       <string/>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgba(0,0,0,255);
-background-color: rgb(145, 197, 206);
-font: 9pt &quot;Arial&quot;;
-border-top-right-radius: 5px;
-border-bottom-right-radius: 5px;
-border-top-left-radius: 5px;
-border-bottom-left-radius: 5px;
-border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);background-color: rgb(145, 197, 206);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-      <property name="dragEnabled">
-       <bool>false</bool>
-      </property>
-      <property name="placeholderText">
-       <string notr="true">Second</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="settime">
-      <property name="geometry">
-       <rect>
-        <x>105</x>
-        <y>440</y>
-        <width>100</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>set timer</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
@@ -566,9 +533,9 @@ color: rgb(0, 255, 127);</string>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>710</x>
+        <x>680</x>
         <y>330</y>
-        <width>81</width>
+        <width>141</width>
         <height>81</height>
        </rect>
       </property>
@@ -586,6 +553,9 @@ color: rgb(0, 255, 127);</string>
       </property>
       <property name="text">
        <string>✘</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QLabel" name="point1">
@@ -608,7 +578,7 @@ color: rgb(0, 255, 127);</string>
 color: rgb(85, 255, 127);</string>
       </property>
       <property name="text">
-       <string>10</string>
+       <string>0</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -634,7 +604,7 @@ color: rgb(85, 255, 127);</string>
        <string notr="true">color: rgb(255, 0, 0);</string>
       </property>
       <property name="text">
-       <string>10</string>
+       <string>0</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -662,7 +632,7 @@ border-bottom-left-radius: 10px;</string>
      <widget class="QProgressBar" name="progressBar_ingame">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>220</x>
         <y>50</y>
         <width>481</width>
         <height>41</height>
@@ -690,7 +660,7 @@ border: 2px solid grey; border-radius: 5px; text-align: center;
        <number>20</number>
       </property>
       <property name="value">
-       <number>10</number>
+       <number>0</number>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -699,13 +669,61 @@ border: 2px solid grey; border-radius: 5px; text-align: center;
        <string>%v</string>
       </property>
      </widget>
+     <widget class="QLabel" name="levelNumber">
+      <property name="geometry">
+       <rect>
+        <x>81</x>
+        <y>403</y>
+        <width>144</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>51</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>250</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="totalLevel">
+      <property name="geometry">
+       <rect>
+        <x>84</x>
+        <y>342</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>26</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(0, 0, 103);</string>
+      </property>
+      <property name="text">
+       <string>Level</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
      <zorder>background</zorder>
      <zorder>quitButton</zorder>
      <zorder>pushButton</zorder>
      <zorder>fcard</zorder>
      <zorder>pushButton_2</zorder>
      <zorder>language</zorder>
-     <zorder>level</zorder>
+     <zorder>gameTime</zorder>
      <zorder>lt_b</zorder>
      <zorder>lb_b</zorder>
      <zorder>rb_b</zorder>
@@ -714,16 +732,16 @@ border: 2px solid grey; border-radius: 5px; text-align: center;
      <zorder>label</zorder>
      <zorder>label_2</zorder>
      <zorder>point2</zorder>
-     <zorder>lb_f</zorder>
      <zorder>point1</zorder>
-     <zorder>settime</zorder>
      <zorder>sleeptime</zorder>
      <zorder>time</zorder>
-     <zorder>timeinput</zorder>
      <zorder>rb_f</zorder>
      <zorder>rt_f</zorder>
      <zorder>lt_f</zorder>
      <zorder>progressBar_ingame</zorder>
+     <zorder>levelNumber</zorder>
+     <zorder>totalLevel</zorder>
+     <zorder>lb_f</zorder>
     </widget>
    </item>
   </layout>
