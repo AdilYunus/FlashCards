@@ -129,7 +129,7 @@ border-bottom-left-radius: 25px;</string>
        <rect>
         <x>60</x>
         <y>250</y>
-        <width>201</width>
+        <width>221</width>
         <height>51</height>
        </rect>
       </property>
@@ -143,7 +143,7 @@ border-bottom-left-radius: 25px;</string>
        <string notr="true">color: rgb(3, 151, 157);</string>
       </property>
       <property name="text">
-       <string>Welcom back</string>
+       <string>Welcome back</string>
       </property>
      </widget>
      <widget class="QPushButton" name="quitButton_2">
@@ -168,9 +168,9 @@ border-bottom-left-radius: 25px;</string>
      <widget class="QLabel" name="label_username">
       <property name="geometry">
        <rect>
-        <x>262</x>
+        <x>280</x>
         <y>251</y>
-        <width>221</width>
+        <width>251</width>
         <height>51</height>
        </rect>
       </property>
