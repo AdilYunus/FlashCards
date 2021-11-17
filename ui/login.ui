@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Flash Cards</string>
+   <string>FlashCards</string>
   </property>
   <property name="locale">
    <locale language="English" country="UnitedStates"/>

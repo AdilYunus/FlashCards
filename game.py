@@ -8,16 +8,18 @@ from datetime import datetime
 
 class Game(QtWidgets.QDialog):
 
-    def __init__(self, name, level, count_t):
+    def __init__(self, name, level, count_t,select_value):
+        self.settime = select_value
         self.name = name
         self.level = level
         self.count_t = count_t
         self.count_s = '00:00:00'
-        self.count = 3
+        self.count = int(self.settime)
         super(Game, self).__init__()
         uic.loadUi('ui/game_screen.ui', self)
         # when click beck button call func. back
         self.quitButton.clicked.connect(self.back)
+        self.exitButton.clicked.connect(self.exit)
         self.levelNumber.setText(str(self.level))
         # disable window close button
         self.setWindowFlag(QtCore.Qt.WindowCloseButtonHint, False)
@@ -87,49 +89,49 @@ class Game(QtWidgets.QDialog):
         self.cams = menu.Menu(self.name)
         self.cams.show()
         self.close()
+    def exit(self):
+        self.level_update()
+        self.close()
 
     def level_update(self):  # level and game time update -A
-        self.user_info = {
-            'username': self.name,
-            'level': self.level,
-            'time': self.count_t
-        }
+        #-------------------------------------------
         js_file_name = 'user/'+self.name+'.json'
+        with open('user/'+self.name+'.json', 'r') as jsFile:
+            user_data = json.load(jsFile)
+            user_data['username'] = self.name
+            user_data['level'] = self.level
+            user_data['time'] = self.count_t
         with open(js_file_name, 'w') as jsFile:
-            jsFile.write(json.dumps(self.user_info, indent=4))
-
+            jsFile.write(json.dumps(user_data, indent=4))
+            
+        #-------------------------------------------
     def true(self):  # click True +1 to c_true
         #set button disable
         self.pushButton.setEnabled(False)
         self.pushButton_2.setEnabled(False)
         #start sleep time
         self.timer2.start(1000)
-        self.count = 3
+        self.count = int(self.settime)
         #update sleep time
         self.sleeptime.setText(str(self.count))
-        self.words.setText(self.word_list[self.index][0])
-        self.c_true += 1
         self.index += 1
-        #show dutch word
-        
-        self.point1.setText(str(self.c_true))
-        self.point2.setText(str(self.c_false))
-
-        self.language.setText('Nederlands')
-        #updat progresbar
-        self.progressBar_ingame.setProperty("value", self.c_true)
+        self.c_true += 1
+        if self.index > 20:
+            self.c_false -= 1
 
         if self.c_true == 20:  # if c_true = 20 level +1 and begin new level
+            
             self.level += 1
             self.c_true = 0
             self.c_false = 0
+
             self.point2.setText(str(self.c_false))
             self.point1.setText(str(self.c_true))
             self.levelNumber.setText(str(self.level))
             self.progressBar_ingame.setProperty("value", self.c_true)
             self.index = 0
             self.word_list = []
-            if self.level == 251:#If the player has done all level.than back to level 1
+            if self.level == 251:
                 self.timer2.stop()
                 self.level = 1
                 self.index = 0
@@ -141,16 +143,27 @@ class Game(QtWidgets.QDialog):
                 #call methode for begin new level
                 self.load_words()
 
+        else:
+            self.words.setText(self.word_list[self.index][0]) #show dutch word
+
+            self.point1.setText(str(self.c_true))
+            self.point2.setText(str(self.c_false))
+
+            self.language.setText('Nederlands')
+            #updat progresbar
+            self.progressBar_ingame.setProperty("value", self.c_true)
+
     def false(self):  # click false +1 to c_false and append this word to word_list -A
         #set button disable
         self.pushButton_2.setEnabled(False)
         self.pushButton.setEnabled(False)
         self.timer2.start(1000)
-        self.count = 3
+        self.count = int(self.settime)
         self.sleeptime.setText(str(self.count))
         #append words to last of list
         self.word_list.append(self.word_list[self.index])
-        self.c_false += 1
+        if self.index < 20:
+            self.c_false += 1
         self.point2.setText(str(self.c_false))
         self.index += 1
         self.words.setText(self.word_list[self.index][0])
@@ -171,7 +184,7 @@ class Game(QtWidgets.QDialog):
             self.word_list.append(
                 [self.total_list[str(n)]['Dutch Word'], self.total_list[str(n)]['English Word']])
 
-        # -------a
+        # -------
         self.c_true = 0
         self.c_false = 0
         self.point1.setText(str(self.c_true))

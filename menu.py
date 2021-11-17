@@ -4,7 +4,6 @@ import sys
 from game import Game
 import json
 
-
 class Menu(QtWidgets.QDialog):
 
     def __init__(self, name):
@@ -17,10 +16,12 @@ class Menu(QtWidgets.QDialog):
             "value", self.total_progress())  # call menu progressBar -A
         self.quitButton_2.clicked.connect(self.quit)  # menu page-> quit -A
         self.setWindowFlag(QtCore.Qt.WindowCloseButtonHint, False)
+        
         self.show()
 
     def play(self):
-        self.cams = Game(self.name, self.level_1, self.count_t)
+        self.getComboxBoxValue()
+        self.cams = Game(self.name, self.level_1, self.count_t,self.select_value)
         self.cams.show()
         self.close()
 
@@ -33,3 +34,8 @@ class Menu(QtWidgets.QDialog):
 
     def quit(self):  # quit methode-A
         self.close()
+
+    def getComboxBoxValue(self):
+        #bonus 
+        self.select_value = self.setTime.currentText()
+        

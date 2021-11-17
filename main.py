@@ -3,12 +3,12 @@ import json
 from PyQt5 import QtWidgets, uic
 import sys
 import os
-import login
+import loading
 
 csvFilePath = 'nl_words_4data.csv'
 jsonFilePath = 'nl_words_4data.json'
 
-# read csv file & add to data dict.
+# read csv file & add to data
 data = {}
 with open(csvFilePath, encoding='utf-8') as csvFile:
     csvReader = csv.DictReader(csvFile)
@@ -21,5 +21,5 @@ with open(jsonFilePath, 'w', encoding='utf-8') as jsonFile:
 
 
 app = QtWidgets.QApplication(sys.argv)
-window = login.Login()
+window = loading.Loading()
 app.exec_()
